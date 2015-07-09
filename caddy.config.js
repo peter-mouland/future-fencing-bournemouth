@@ -5,16 +5,15 @@ var serverFilesGlob = '/*{CNAME,.htaccess,robots.txt,manifest.json}';
 module.exports = {
     pkg: pkg,
     buildPaths: [
-        {source: "./src", target: './_site', minify: true},
-        {source: "./examples", target: './_site'}
+        {source: "./src", target: './_site', minify: true}
     ],
     tasks : {
-        copy: [imagesAndFontsGlob, serverFilesGlob],
+        copy: ['home_files', serverFilesGlob],
         bump: ['package.json','README.md', '*/app.json'],
         build: ['sass', 'mustache', 'browserify'],
         serve: 'staticApp',
-        test: 'karma',
+        //test: 'karma',
         release: ['git', 'gh-pages']
-    },
-    karma: ['./test/karma.functional.js',  './test/karma.unit.js']
+    }
+    //,karma: ['./test/karma.functional.js',  './test/karma.unit.js']
 };

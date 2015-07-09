@@ -8,7 +8,6 @@
         "url": "git@github.com:peter-mouland/future-fencing-bournemouth.git"
     },
     "scripts": {
-      "postinstall": "bower install",
       "copy": "caddy copy",
       "build": "caddy build",
       "bump": "caddy bump",
@@ -16,7 +15,7 @@
       "report": "caddy serve test/coverage/phantomjs/",
       "start": "caddy clean && caddy copy && caddy build -dev && caddy serve",
       "tdd": "caddy test tdd",
-      "test": "jshint src && caddy clean && caddy copy && caddy build && caddy test"
+      "test": "jshint src/scripts && caddy clean && caddy copy && caddy build && caddy test"
     },
     "devDependencies": {
       "browserify-istanbul": "^0.2.1",
