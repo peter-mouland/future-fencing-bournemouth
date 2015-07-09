@@ -1,7 +1,7 @@
-[Future Fencing Bournemouth]({{ git.io-URL }})  [![Circle CI](https://circleci.com/gh/{{ git.username }}/future-fencing-bournemouth/tree/master.svg?style=svg)](https://circleci.com/gh/{{ git.username }}/future-fencing-bournemouth/tree/master)
+[Future Fencing Bournemouth](http://peter-mouland.github.io/future-fencing-bournemouth.git)  [![Circle CI](https://circleci.com/gh/peter-mouland/future-fencing-bournemouth/tree/master.svg?style=svg)](https://circleci.com/gh/peter-mouland/future-fencing-bournemouth/tree/master)
 ========================
 
-> Please take a look at the [demo page]({{ git.io-URL }})
+> Please take a look at the [demo page](http://peter-mouland.github.io/future-fencing-bournemouth.git)
 
 ## Quick-Start
 
