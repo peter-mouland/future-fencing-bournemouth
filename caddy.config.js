@@ -13,7 +13,7 @@ module.exports = {
         build: ['sass', 'mustache', 'browserify'],
         serve: 'staticApp',
         //test: 'karma',
-        release: ['git', 'gh-pages']
+        release: ['gh-pages']
     }
     //,karma: ['./test/karma.functional.js',  './test/karma.unit.js']
 };
