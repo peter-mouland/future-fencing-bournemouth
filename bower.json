@@ -1,0 +1,17 @@
+{
+    "name": "future-fencing-bournemouth",
+    "homepage": "{{ git.HTTPS-URL }}",
+    "authors": [
+        "{{ git.author }} <{{ git.email }}>"
+    ],
+    "description": "Future Fencing Bournemouth",
+    "main": "dist",
+    "license": "BSD3",
+    "ignore": [
+        "**/*",
+        "!src/**/*"
+    ],
+    "devDependencies": {
+        "bskyb-core": "~0.0.4"
+    }
+}

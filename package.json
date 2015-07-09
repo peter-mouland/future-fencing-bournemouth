@@ -1,0 +1,27 @@
+{
+    "name": "future-fencing-bournemouth",
+    "version": "0.0.0",
+    "description": "Example package.json. Feel free to copy!",
+    "main": "src/scripts/future-fencing-bournemouth.js",
+    "repository": {
+        "type": "git",
+        "url": "{{ git.SSH-URL }}"
+    },
+    "scripts": {
+      "postinstall": "bower install",
+      "copy": "caddy copy",
+      "build": "caddy build",
+      "bump": "caddy bump",
+      "release": "npm test && caddy release",
+      "report": "caddy serve test/coverage/phantomjs/",
+      "start": "caddy clean && caddy copy && caddy build -dev && caddy serve",
+      "tdd": "caddy test tdd",
+      "test": "jshint src && caddy clean && caddy copy && caddy build && caddy test"
+    },
+    "devDependencies": {
+      "browserify-istanbul": "^0.2.1",
+      "web-caddy" : "2.0.1",
+      "jshint": "^2.6.3"
+    },
+    "author": "{{ git.author }}"
+}
